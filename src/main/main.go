@@ -7,7 +7,7 @@ import (
 func main(){
 	println("starting...")
 http.HandleFunc("/", func (w http.ResponseWriter , r *http.Request)  {
-	w.Write([]byte("Home page"))
+	w.Write([]byte("Home page <a href='//contact//'>Contact<//a>"))
 	
 })
 
